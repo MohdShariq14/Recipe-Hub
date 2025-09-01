@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Recipes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Recipe Hub</h1>
+    <div class="hamburger">&#9776;</div>
+    <div class="nav-items">
+        <button id="home-btn">Home</button>
+        <button id="all-recipes-btn">All Recipes</button>
+        <button id="saved-btn">Saved Recipes</button>
+        <input type="text" id="search-input" placeholder="Search recipes...">
+        <button id="search-btn">Search</button>
+    </div>
+</header>
+
+<!-- Notification -->
+<div id="notification" class="notification"></div>
+
+<!-- Home Section -->
+<section id="home-section">
+    <div class="home-content">
+        <img src="image.gif" alt="Home Image">
+        <h2 class="delay1">Welcome to Foodies</h2>
+        <p class="delay2">Discover delicious recipes from around the world!</p>
+        <button id="go-recipes">Explore Recipes</button>
+    </div>
+</section>
+
+<!-- Recipes Grid -->
+<section class="recipes-grid" id="recipes-grid"></section>
+
+<!-- Saved Modal -->
+<div class="saved-modal" id="saved-modal">
+    <div class="saved-content">
+        <button id="close-saved">&times;</button>
+        <h2>Saved Recipes</h2>
+        <div class="saved-recipes" id="saved-recipes"></div>
+    </div>
+</div>
+
+<!-- Full Recipe Modal -->
+<div id="full-recipe-modal">
+    <div id="full-recipe-content">
+        <button id="close-full">&times;</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
